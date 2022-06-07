@@ -13,13 +13,13 @@ Sử dụng JD-GUI view sources:
 Trong hàm check sẽ là loop giữa các hàm check, check1, check2 và check3. Công việc của ta là RE lại hoặc sử dụng cách tương tự để in ra được par1 phù hợp với điều kiện. Code bruteforce:
 ```python
 def check(par1, par2):
-    if par2 &lt;= 1:
+    if par2 <= 1:
         return par1
 
-    if 2 \* par2 % 3 == 0:
+    if 2 * par2 % 3 == 0:
         return check1(par1, par2 - 1)
 
-    elif 2 \* par2 % 3 == 1:
+    elif 2 * par2 % 3 == 1:
         return check2(par1, par2 - 1)
 
     else:
